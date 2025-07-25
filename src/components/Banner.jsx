@@ -10,6 +10,6 @@ export default function Banner () {
                     <button className="btn">ACIKTIM</button>
                 </div>
             </div>
-   </section>
+        </section>
     </>)
 }
