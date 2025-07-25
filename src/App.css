@@ -22,3 +22,8 @@ img {
 img {
   border-style: none;
 }
+
+body {  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;}
