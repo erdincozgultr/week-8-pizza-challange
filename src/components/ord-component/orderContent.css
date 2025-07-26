@@ -1,0 +1,44 @@
+.order-content {
+    padding-bottom: 1rem;
+}
+.img-cut {
+    width: auto;
+    height: auto; 
+    overflow: hidden;
+}
+.img-cut img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: -85px;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.header-nav span{
+    font-family: 'Roboto Condensed';
+    font-weight: 200;
+}
+
+.header-nav span:last-child{
+    font-weight: 400;
+}
+
+p {
+    font-family: "Barlow";
+    align-items: center;
+    font-size: 0.88rem;
+    line-height: 1.7rem;
+}
+
+.pizzaDetail p:first-child{
+    flex-grow: 2;
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+.pizzaDetail p:nth-child(2) {
+    flex-grow: 1;
+}

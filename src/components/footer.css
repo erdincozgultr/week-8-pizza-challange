@@ -2,7 +2,7 @@
   background-color: #292929;
 }
 
-footer .container {
+footer .ft-container {
   padding: 2rem 0;
 }
 footer div.footer-content {
@@ -23,6 +23,9 @@ footer .mid-footer {
 footer .right-footer {
   width: 25%;
 }
+footer .right-footer img {
+  width: 30%;
+}
 footer .gallery-footer {
   display: flex;
   gap: 0.5rem;
@@ -35,9 +38,6 @@ footer .left-footer div img{
   width: 1.2rem;
   height: 1.2rem;
 }
-footer .right-footer img {
-  width: 25%;
-}
 footer p {
   font-family: 'Roboto Condensed';
   font-weight: 200;
@@ -49,7 +49,7 @@ footer h5 {
   font-weight: 400;
 }
 
-footer .container-copyright {     /* Copyright */
+footer .container-copyright {
   border-top: 1px solid #5F5F5F;
   padding: 1.5rem 0;
 }

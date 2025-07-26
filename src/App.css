@@ -38,6 +38,10 @@ h1,h2,h3,h4,p {
   margin-block-end: 0em;
 }
 
+.bcolor-bej{
+  background-color: #FAF7F2;
+}
+
 .color-yellow {
   color: #FDC913;
 }
@@ -68,6 +72,10 @@ h1,h2,h3,h4,p {
   display: flex;
   justify-content: space-between;
 }
+.flex-justify-c {
+  display: flex; 
+  justify-content: center; 
+}
 .container-size {
   width: 500px;
   margin: 0 auto;
@@ -77,6 +85,12 @@ h1,h2,h3,h4,p {
 }
 .row-gap-2rem {
   row-gap: 2rem;
+}
+.row-gap-3rem {
+  row-gap: 3rem;
+}
+.gap-1rem {
+  gap: 1rem;
 }
 
 .width-100 {

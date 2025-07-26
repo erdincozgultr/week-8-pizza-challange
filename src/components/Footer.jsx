@@ -3,7 +3,7 @@ import "./footer.css";
 export default function Footer () {
     return (
         <footer className="footer-section color-white">
-            <section className="container width-65">
+            <section className="ft-container width-65">
                  <div className="flex-justify-sb footer-content">
                     <div className="flex-column left-footer">
                     <img src="../images/iteration-2-images/footer/logo-footer.svg"/>
