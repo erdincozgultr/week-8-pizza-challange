@@ -82,6 +82,14 @@ h1 {
   line-height: 1.1;
 }
 
+h2 {
+  font-family: 'Quattrocento';
+  font-weight: 600;
+  font-size: 4rem;
+  color: white;
+  line-height: 110%;
+}
+
 h4 {
   font-family: 'Barlow';
   font-weight: 500;

@@ -1,12 +1,11 @@
 import './App.css'
-import Banner from './components/banner'
-import Order from './components/Order'
+import Success from './components/Success'
 
 function App() {
 
   return (
     <>
-      <Order/>
+      <Success/>
     </>
   )
 }

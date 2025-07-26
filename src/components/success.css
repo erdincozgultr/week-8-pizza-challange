@@ -1,0 +1,20 @@
+.order-success {
+    width: 100vw;
+    height: 100vh;
+    background-color: #CE2829;   
+}
+
+.order-success .logo {
+    margin: 5rem 0;
+    width: 20rem;
+}
+
+.result-container {
+    align-items: center;
+    row-gap: 15rem;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+}
