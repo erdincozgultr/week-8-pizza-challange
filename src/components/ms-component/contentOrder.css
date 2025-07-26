@@ -1,0 +1,40 @@
+.main-content {
+  display: flex;
+  gap: 1rem;
+}
+.main-content .leftbar {
+  position: relative;
+  display: inline-block;
+  line-height: 1.5rem;
+}
+.main-content img {
+  border-radius: 1rem;
+  display: block;
+}
+.main-content .leftbar .absolute-content {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+.rightbar .absolute-content {
+  position: relative;
+}
+.rightbar .absolute-content div{
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+.main-content p {
+  padding-bottom: 1rem;
+}
+.main-content .btn {
+  font-size: 0.8rem;
+  padding: 0.5rem 1.3rem;
+  border-radius: 1.5rem;
+  background-color: white;
+}
+.main-content button:hover {
+  border-color: #FDC913;
+}

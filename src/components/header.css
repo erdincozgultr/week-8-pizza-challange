@@ -1,0 +1,20 @@
+header.menu {
+    background-color: white;
+}
+.menu-content {
+    margin: 0 auto;
+}
+.menu-content a {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1.2rem 0;
+}
+.menu-content img {
+    height: 2rem;
+}
+.menu-content p {
+    font-family: "Roboto Condensed";
+    font-weight: 500;
+    font-size: 1rem;
+}

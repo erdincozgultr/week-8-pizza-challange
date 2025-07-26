@@ -1,0 +1,44 @@
+
+.main-menu-btn button {    
+  font-size: 0.8rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1.5rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.main-menu-btn .btn-active {
+  background-color: #292929;
+}
+.main-menu-btn img{
+  width: 2rem;
+}
+.main-menu-btn button:hover {
+  border-color: #FDC913;
+}
+.main-menu-gallery .gallery-items {
+  border-radius: 3%;
+  background-color: white;
+  padding: 1rem;
+}
+.gallery-items{
+    width: 30%;
+}
+.gallery-items .items-text {
+  display: flex;
+  font-family: 'Barlow';
+  font-weight: 300;
+  font-size: 0.7rem;
+}
+.gallery-items .bold {
+  font-family: 'Barlow';
+  font-weight: 600;
+  font-size: 1rem;
+}
+.items-text p:first-child {
+  flex-grow: 2;
+}
+.items-text p:nth-child(2) {
+  flex-grow: 1;
+}
