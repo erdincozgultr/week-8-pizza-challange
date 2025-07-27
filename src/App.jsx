@@ -1,30 +1,33 @@
 import './App.css'
+import Home from './components/Home';
 import Order from "./components/Order"
-function App() {
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 
+function App() {
   return (
     <>
-      <Order/>
+    <Router>
+      <div>
+         <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+           <Route path="/order">
+            <Order/>
+          </Route>
+        </Switch>
+      </div>
+    </Router>
     </>
+    
   )
 }
 
 
 export default App
-  /*<Banner/>
-      <Header/>
-      <MainSection/>
-      <Footer/>  */
-
-    /*
-
-    import Footer from "./components/Footer";
-import Banner from "./components/Banner"
-import Header from './components/Header'
-import MainSection from './components/MainSection'
-
-    */
-   
-      /*
-      import Order from "./components/Order"
-      <Order/>*/
+ 

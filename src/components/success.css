@@ -1,7 +1,6 @@
 .order-success {
-    width: 100vw;
-    height: 100vh;
-    background-color: #CE2829;   
+    background-color: #CE2829;
+    height: 85vh;
 }
 
 .order-success .logo {
@@ -11,10 +10,60 @@
 
 .result-container {
     align-items: center;
-    row-gap: 15rem;
 }
 
 h1 {
     font-size: 4rem;
     text-align: center;
+}
+
+.order-success .stylish {
+  font-family: Satisfy;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  font-weight: 200;
+}
+
+.result-container .container-size {
+    border-top: 1px solid white;
+    align-items: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+.order-success p {
+  font-family: 'Barlow';
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 110%;
+}
+
+.order-success h4 {
+  font-family: 'Barlow';
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 110%;
+  text-align: center;
+}
+
+.order-success .width-40 {
+    width: 40%;
+}
+
+.order-success .width-50 {
+    width: 50%;
+}
+
+.order-success .width-80 {
+    width: 80%;
+}
+
+.order-success .border {
+    border: 1px outset white;
+    border-radius: 0.2rem;
+    padding: 2rem 0;
+}
+.order-success .small {
+    font-size: 1rem;
+    font-weight: 200;
 }
