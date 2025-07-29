@@ -30,7 +30,7 @@ export default function Order () {
     return (   <>
             <section className="color-red header">
                 <div className="container-size flex-column header-container">
-                    <img className="logo" src="../images/iteration-1-images/logo.svg" alt="Logo"/>
+                    <img className="logo" data-cy="banner-logo" src="../images/iteration-1-images/logo.svg" alt="Logo"/>
                 </div>
             </section>
             {orderIsValid ? (

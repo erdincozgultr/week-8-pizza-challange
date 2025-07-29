@@ -126,7 +126,7 @@ export default function OrderForm(props) {
                             <h4 className='flex gap-hrem color-grey'>Boyut Seç<h4 className="color-red">{errors.size && "*" }</h4></h4>
                             <div className="flex-justify-sb gap-1rem">
                                 {pizzaBoyutlar.map(boyut => (
-                                <button className={form.size === boyut.name ? "pizza-size pizza-size-active" : "pizza-size"} type="button" onClick={handleSize}id={boyut.name} name={boyut.name}>{boyut.label}</button>
+                                <button className={form.size === boyut.name ? "pizza-size pizza-size-active" : "pizza-size"} type="button" onClick={handleSize}id={boyut.name} name={boyut.name} data-cy={`button-${boyut.name}`}>{boyut.label}</button>
                             ))}
                             </div>
                         </div>
@@ -149,7 +149,7 @@ export default function OrderForm(props) {
                             {pizzaMalzemeler.map(malzeme => (
                                 <div className='checkboxes' key={malzeme}>
                                     <label class="cx-container">
-                                    <input type="checkbox" name={malzeme} onChange={handleChange} />{malzeme}
+                                    <input type="checkbox" name={malzeme} onChange={handleChange} data-cy={`checkbox-${malzeme}`}/>{malzeme}
                                     <span class="checkmark"></span>
                                     </label>
                                 </div>
@@ -159,12 +159,12 @@ export default function OrderForm(props) {
                     </div>
                     <div className='flex-column row-gap-1rem'>
                         <h4 className='color-grey'>Sipariş Notu</h4>
-                        <input  id="order-input" name="orderNote" type='text' placeholder='Siparişine eklemek istediğin bir not var mı?' onChange={handleChange}/>
+                        <input  id="order-input" name="orderNote" type='text' placeholder='Siparişine eklemek istediğin bir not var mı?' onChange={handleChange} data-cy="input-note"/>
                         <div className='finalize'>
                             <div className='increase'>
-                                <button className="size-33" type='button' name="desc" onClick={handleCounter}>-</button>
-                                <h4 className="size-33 flex-justify-c">{form.count}</h4>
-                                <button className="size-33" type='button' name="incr"onClick={handleCounter}>+</button>
+                                <button className="size-33" type='button' name="desc" onClick={handleCounter} data-cy="button-desc">-</button>
+                                <h4 className="size-33 flex-justify-c" data-cy="pizza-count">{form.count}</h4>
+                                <button className="size-33" type='button' name="incr"onClick={handleCounter} data-cy="button-incr">+</button>
                             </div>
                             <div className='flex-column width-100'>
                                 <div className='flex-column orderSum row-gap-1rem'>
@@ -174,7 +174,7 @@ export default function OrderForm(props) {
                                         <div className='flex-justify-sb color-red'><p>Toplam</p><p>{form.total}₺</p></div>
                                     </div>
                                 </div>
-                                <button className='submit' disabled={isValid ? false : true}><h4>SİPARİŞ VER</h4></button>
+                                <button className='submit' disabled={isValid ? false : true} data-cy="button-submit"><h4>SİPARİŞ VER</h4></button>
                             </div>
                         </div>
                     </div>             
