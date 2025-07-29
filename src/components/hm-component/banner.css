@@ -31,3 +31,33 @@ section.banner .stylish {
   filter: contrast(90%);
   margin-top: 1.5rem;
 }
+
+@media (max-width: 430px){
+  section.banner h1 {
+    font-size: 3.4rem;
+  }
+
+section.banner {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  section.banner .banner-content{
+    width: 30%;
+  }
+  section.banner .stylish {
+    display: none;
+  }
+  section .container {
+    width: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section.banner .btn {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.5rem 2rem;
+  }
+}

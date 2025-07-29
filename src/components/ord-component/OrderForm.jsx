@@ -121,10 +121,10 @@ export default function OrderForm(props) {
         <section className='form'>
             <form onSubmit={(event) => handleSubmit(event, isValid, form)}>
                 <div className="container-size flex-column form-container">
-                    <div className='flex-justify-sb'>
-                        <div className='flex-column row-gap-1rem '>
+                    <div className='flex-justify-sb size-dough'>
+                        <div className='flex-column row-gap-1rem'>
                             <h4 className='flex gap-hrem color-grey'>Boyut Seç<h4 className="color-red">{errors.size && "*" }</h4></h4>
-                            <div className="flex-justify-sb gap-1rem">
+                            <div className="flex-justify-sb gap-1rem size-container">
                                 {pizzaBoyutlar.map(boyut => (
                                 <button className={form.size === boyut.name ? "pizza-size pizza-size-active" : "pizza-size"} type="button" onClick={handleSize}id={boyut.name} name={boyut.name} data-cy={`button-${boyut.name}`}>{boyut.label}</button>
                             ))}
@@ -159,7 +159,7 @@ export default function OrderForm(props) {
                     </div>
                     <div className='flex-column row-gap-1rem'>
                         <h4 className='color-grey'>Sipariş Notu</h4>
-                        <input  id="order-input" name="orderNote" type='text' placeholder='Siparişine eklemek istediğin bir not var mı?' onChange={handleChange} data-cy="input-note"/>
+                        <input id="order-input" name="orderNote" type='text' placeholder='Siparişine eklemek istediğin bir not var mı?' onChange={handleChange} data-cy="input-note"/>
                         <div className='finalize'>
                             <div className='increase'>
                                 <button className="size-33" type='button' name="desc" onClick={handleCounter} data-cy="button-desc">-</button>
@@ -174,10 +174,10 @@ export default function OrderForm(props) {
                                         <div className='flex-justify-sb color-red'><p>Toplam</p><p>{form.total}₺</p></div>
                                     </div>
                                 </div>
-                                <button className='submit' disabled={isValid ? false : true} data-cy="button-submit"><h4>SİPARİŞ VER</h4></button>
+                            <button className='submit' disabled={isValid ? false : true} data-cy="button-submit"><h4>SİPARİŞ VER</h4></button>
                             </div>
                         </div>
-                    </div>             
+                    </div>
                 </div>
             </form>
         </section>

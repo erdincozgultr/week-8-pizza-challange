@@ -42,3 +42,9 @@ p {
 .pizzaDetail p:nth-child(2) {
     flex-grow: 1;
 }
+
+@media (max-width: 430px){
+    .order-content {
+        width: 85%;
+    }
+}

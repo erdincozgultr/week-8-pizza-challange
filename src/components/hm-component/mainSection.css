@@ -13,3 +13,15 @@ h3 {
   font-size: 1.5rem;
   filter: contrast(90%);
 }
+
+@media (max-width: 430px){
+  .main-container {
+  width: 75%;
+  }
+
+  .main-section h3 {
+    width: 73%;
+    margin: 0 auto;
+    font-size: 2rem;
+  }
+}
